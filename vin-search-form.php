@@ -3,7 +3,7 @@
 Plugin Name: VIN Search - Carvertical
 Description: Форма поиска по VIN-номеру авто для Carvertical. Партнёрскую ссылку можно менять в настройках: домен, путь и параметры. Для вставки на сайт используйте: <strong>[vin_search]</strong>.
 Version: 1.4
-Author: Vladimyr
+Author: site2seo
 Update URI: https://github.com/vmdnepr/vin-search-form
 */
 
@@ -600,7 +600,7 @@ function vin_search_options_page() {
     <div class="wrap vin-search-settings">
         <h1>VIN Search Settings</h1>
         <p>Форма поиска по VIN-номеру авто для Carvertical. Для вставки в любое место на сайте используйте: <strong>[vin_search]</strong></p>
-        <p class="description">Автор: Vladimyr. Все настройки плагина хранятся одной записью в базе. Обновления подтягиваются из <a href="https://github.com/vmdnepr/vin-search-form">GitHub</a>.</p>
+        <p class="description">Автор: site2seo. Все настройки плагина хранятся одной записью в базе. Обновления подтягиваются из <a href="https://github.com/vmdnepr/vin-search-form">GitHub</a>.</p>
         <?php settings_errors(); ?>
         <nav class="nav-tab-wrapper" aria-label="Разделы VIN Search">
             <a href="<?php echo esc_url(admin_url('options-general.php?page=vin_search')); ?>" class="nav-tab <?php echo $tab === 'link' ? 'nav-tab-active' : ''; ?>">Ссылка</a>
@@ -1495,7 +1495,7 @@ function vin_search_github_plugin_info($result, $action, $args) {
         'name' => 'VIN Search - Carvertical',
         'slug' => $slug,
         'version' => $release['version'],
-        'author' => 'Vladimyr',
+        'author' => 'site2seo',
         'homepage' => 'https://github.com/' . $release['repo'],
         'download_link' => $release['package'],
         'trunk' => $release['package'],
